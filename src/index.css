@@ -4,7 +4,7 @@
 }
 
 .wrapper-custom {
-  @apply flex flex-col gap-1 relative;
+  @apply flex flex-col gap-1 relative mb-3 lg:mb-0;
 }
 
 .poppins{

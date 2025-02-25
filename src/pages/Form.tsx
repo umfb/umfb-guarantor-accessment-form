@@ -113,7 +113,7 @@ export default function Form() {
             )}
           </div>
           <div className="row">
-            <div className="wrapper-custom col-12 col-md-6">
+            <div className="wrapper-custom col-12 col-lg-6 mb-3 lg:mb-0">
               <label className="font-bold" htmlFor="business-visit">
                 Date of business visit
               </label>
@@ -130,7 +130,7 @@ export default function Form() {
                 </p>
               )}
             </div>
-            <div className="wrapper-custom col-12 col-md-6">
+            <div className="wrapper-custom col-12 col-lg-6 mb-3 lg:mb-0">
               <label className="font-bold" htmlFor="home-visit">
                 Date of home visit
               </label>
@@ -148,7 +148,7 @@ export default function Form() {
               )}
             </div>
           </div>
-          <div className="wrapper-custom">
+          <div className="wrapper-custom mb-3 lg:mb-0">
             <label className="font-bold" htmlFor="t-o-g">
               Type of Guarantor
             </label>
@@ -1095,7 +1095,7 @@ export default function Form() {
           <div className="wrapper-custom">
             {!signature ? (
               <label
-                className="w-[30%] h-60 border-dashed border-2 border-gray-700 d-flex text-center justify-center items-center hover:bg-slate-100 cursor-pointer shadow-md"
+                className="lg:w-[30%] w-[250px] h-60 border-dashed border-2 border-gray-700 d-flex text-center justify-center items-center hover:bg-slate-100 cursor-pointer shadow-md"
                 htmlFor="signature"
               >
                 <span>Signature</span>
@@ -1104,7 +1104,7 @@ export default function Form() {
               <div
                 onMouseEnter={handleEnter}
                 onMouseLeave={handleLeave}
-                className="relative w-[30%] h-60 bg-gray-200 shadow-md"
+                className="relative lg:w-[30%] w-[250px] h-60 bg-gray-200 shadow-md"
               >
                 {hover && (
                   <button
@@ -1133,11 +1133,6 @@ export default function Form() {
               accept="image/*"
               onChange={(e) => handleSignature(e)}
             />
-            {/* {errors["Signature"] && (
-              <p className="p-0 m-0 absolute -bottom-4 text-xs text-[#f00]">
-                {errors["Signature"].message}
-              </p>
-            )} */}
           </div>
           <div className="wrapper-custom">
             <label className="font-bold" htmlFor="signature-date">
@@ -1145,7 +1140,7 @@ export default function Form() {
             </label>
             <input
               {...register("Signature Date")}
-              className="input-custom text-black w-[30%]"
+              className="input-custom text-black lg:w-[30%] w-full"
               name="Signature Date"
               type="date"
               id="signature-date"

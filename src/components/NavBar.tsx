@@ -1,8 +1,12 @@
 export default function NavBar() {
   return (
     <header>
-      <nav className="flex justify-center">
-        <img src="/logo.png" width="450px" alt="unilagmfb-logo" />
+      <nav className="flex justify-center px-3 lg:px-0">
+        <img
+          src="/logo.png"
+          style={{ width: "100%", maxWidth: "450px" }}
+          alt="unilagmfb-logo"
+        />
       </nav>
     </header>
   );
